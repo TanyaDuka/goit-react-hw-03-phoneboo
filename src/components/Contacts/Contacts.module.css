@@ -1,0 +1,17 @@
+.element {
+  display: table;
+  margin: auto;
+  font-weight: bold;
+  font-size: 26px;
+  margin-bottom: 30px;
+}
+
+.deleteButton {
+  margin-left: 25px;
+  padding: 10px;
+  display: inline;
+}
+
+.deleteButton:hover {
+  background-color: red;
+}
