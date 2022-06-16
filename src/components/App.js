@@ -22,11 +22,12 @@ class App extends Component {
     }
   }
 
-  componentDidUpdate(prevState) {
-    const nextTools = this.state.contacts;
-    const prevTools = prevState.contacts;
-    if (nextTools !== prevTools) {
-      localStorage.setItem('contacts', JSON.stringify(nextTools));
+  componentDidUpdate(prevProps, prevState) {
+    const nextContacts = this.state.contacts;
+    const prevContacts = prevState.contacts;
+
+    if (nextContacts !== prevContacts) {
+      localStorage.setItem('contacts', JSON.stringify(nextContacts));
     }
   }
 
